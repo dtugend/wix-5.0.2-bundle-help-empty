@@ -1,0 +1,12 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal" xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util">
+  <Bundle Name="Test Bundle" Version="1.1.0.0" Manufacturer="advancedfx.org" UpgradeCode="{35C8D990-6C4F-4639-ADF7-D259B06E070B}" AboutUrl="https://www.advancedfx.org/" Compressed="yes">
+
+    <BootstrapperApplication>
+      <bal:WixStandardBootstrapperApplication LicenseUrl="" SuppressOptionsUI="yes" ShowVersion="yes" Theme="hyperlinkSidebarLicense" />
+    </BootstrapperApplication>
+
+    <Chain>
+      <PackageGroupRef Id="NetFx472WebAsPrereq" />
+    </Chain>
+  </Bundle>
+</Wix>
